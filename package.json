@@ -1,0 +1,13 @@
+{
+  "name": "create-husky",
+  "version": "0.0.1",
+  "description": "Create a new Husky project using 'bun create husky'",
+  "dependencies": {
+    "husky-routing": "latest"
+  },
+  "bun-create": {
+    "preinstall": "echo 'Installing Husky Routing ...'", 
+    "postinstall": ["echo 'Installation complete!'", "bun install"], 
+    "start": "bun run index.ts"
+  }
+}
